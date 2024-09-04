@@ -1,0 +1,98 @@
+.container {
+  position: relative;
+  width:1024px;
+  height:768px;
+}
+.element-home {
+  position: absolute;
+  width:1024px;
+  height:768px;
+}
+.element-home:nth-child(11) {
+  animation: spin 20s linear infinite;
+  transform-origin: 870px 200px;
+
+}
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+.element-home:nth-child(4) {
+  animation: moveSideToSide 20s linear infinite;
+  transition:scale 1s linear;
+}
+.element-home:nth-child(1) {
+  animation: moveSideToSide 20s linear infinite;
+  transition:scale 1s linear;
+}
+
+@keyframes moveSideToSide {
+  0%{
+		top:0px;
+		left:0px;
+	}
+	50%{
+		top:40px;
+		left:40px;
+	}
+	70%{
+		left:-20px;
+		top:-20px;
+	}
+	80%{
+		left:-20px;
+		top:-20px;
+	}
+	100%{
+		left:0px;
+		top:0px;
+	}
+}
+.element-home:nth-child(6) {
+  animation: pulse 6s infinite;
+  transform-origin: 700px 700px;
+}
+@keyframes pulse {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.2);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+.title-field {
+  position: absolute;
+  top: 156px;
+  left: 65px;
+  line-height: 1.11;
+  letter-spacing: 1px;
+  width: 870px;
+}
+.title-one {
+  font-family: DinPro;
+  font-size: 21pt;
+}
+.title-two {
+  font-family: DinPro;
+  font-size: 84pt;
+}
+@font-face {
+  font-family: "DinPro";
+  src: url("../../../fonts/dinpro.otf") format("opentype");
+  font-style: normal;
+  font-weight: normal;
+}
+@font-face {
+  font-family: "DinPro";
+  src: url("../../../fonts/dinpro_bold.otf") format("opentype");
+  font-style: normal;
+  font-weight: bold;
+}
+

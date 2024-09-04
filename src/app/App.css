@@ -1,0 +1,36 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  overflow: hidden;
+}
+.wrapper {
+  display: flex;
+  overflow: auto;
+  scroll-snap-type: x mandatory;
+}
+section {
+  height: 100vh;
+  min-width: 100vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  scroll-snap-align: start;
+  background-image: url("/public/images/Ellipse_1_copy.jpg");
+  background-size: 300%;
+  background-repeat: no-repeat;
+}
+.wrapper section:nth-child(1) {
+  background-position: left;
+}
+.wrapper section:nth-child(2) {
+  background-position: center;
+}
+.wrapper section:nth-child(3) {
+  background-position: right;
+}
+.main-el {
+  position: fixed;
+  width:1024px;
+  height:768px;
+}

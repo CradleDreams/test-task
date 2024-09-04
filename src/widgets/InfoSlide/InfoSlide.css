@@ -1,0 +1,60 @@
+.container {
+  position: relative;
+  width:1024px;
+  height:768px;
+}
+.element-info {
+  position: absolute;
+  width:1024px;
+  height:768px;
+}
+.text-field{
+  position: absolute;
+  background-color: white;
+  border-radius: 40px;
+  font-size: 17pt;
+  line-height: 1.4;
+  font-family: DinPro;
+  box-shadow: 10px 10px 30px 1px lightgray;
+  padding: 31px;
+  width: 775px;
+  height: 445px;
+  left: 118px;
+  top:240px;
+  overflow-y: auto;
+}
+.text-message {
+  position: absolute;
+  font-size: 23pt;
+  font-family: DinPro;
+  left: 53px;
+  width: 200px;
+  top:120px;
+}
+/*.text-field::-webkit-scrollbar {*/
+/*  width: 40px;*/
+/*  background-color: white;*/
+/*}*/
+
+/*.text-field::-webkit-scrollbar-thumb {*/
+/*  border-radius: 40px;*/
+/*  background-color: deeppink;*/
+/*}*/
+
+/*.text-field::-webkit-scrollbar-track {*/
+/*  border-radius: 40px;*/
+/*  width: 334px;*/
+/*  background-color: black;*/
+/*}*/
+@font-face {
+  font-family: "DinPro";
+  src: url("../../../fonts/dinpro_light.otf") format("opentype");
+  font-style: normal;
+  font-weight: normal;
+}
+@font-face {
+  font-family: "DinPro";
+  src: url("../../../fonts/dinpro_bold.otf") format("opentype");
+  font-style: normal;
+  font-weight: bold;
+}

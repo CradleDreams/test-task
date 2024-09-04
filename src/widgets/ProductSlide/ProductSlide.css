@@ -1,0 +1,65 @@
+.container {
+  position: relative;
+  width:1024px;
+  height:768px;
+}
+.element-product {
+  position: absolute;
+  width:1024px;
+  height:768px;
+
+}
+.notepad-field {
+  position: absolute;
+  background-color: white;
+  box-shadow: 10px 10px 30px 1px lightgray;
+  border-radius: 40px;
+  top: 380px;
+  left: 670px;
+  width: 270px;
+  height: 150px;
+  font-size: 16pt;
+  line-height: 1.4;
+  font-family: DinPro;
+  padding: 50px 90px 0 55px;
+}
+
+.dish-field {
+  position: absolute;
+  background-color: white;
+  box-shadow: 10px 10px 30px 1px lightgray;
+  border-radius: 40px;
+  width: 400px;
+  height: 270px;
+  top: 380px;
+  left: 200px;
+  padding: 50px 40px 0 150px;
+  font-size: 16pt;
+  line-height: 1.4;
+  font-family: DinPro;
+}
+.field-product-t {
+  position: absolute;
+  top: 130px;
+  left: 337px;
+}
+.product-message {
+  font-family: DinPro;
+  font-size: 21pt;
+}
+.product-name {
+  font-family: DinPro;
+  font-size: 80pt;
+}
+@font-face {
+  font-family: "DinPro";
+  src: url("../../../fonts/dinpro_light.otf") format("opentype");
+  font-style: normal;
+  font-weight: normal;
+}
+@font-face {
+  font-family: "DinPro";
+  src: url("../../../fonts/dinpro_bold.otf") format("opentype");
+  font-style: normal;
+  font-weight: bold;
+}
