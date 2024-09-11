@@ -5,15 +5,100 @@
 }
 .element-home {
   position: absolute;
-  width:1024px;
-  height:768px;
 }
-.element-home:nth-child(11) {
+.element-home:nth-child(1) {  /*маленькая сфера слева*/
+  top: 503px;
+  left: 22px;
+  animation: moveSideToSide1 20s linear infinite;
+  transition:scale 1s linear;
+}.element-home:nth-child(2) {
+  top: 72px;
+}.element-home:nth-child(3) {  /*маленькая сфера справа*/
+  top: 61px;
+  left: 744px;
+  animation: moveSideToSide2 20s linear infinite;
+  transition:scale 1s linear;
+}.element-home:nth-child(4) { /*размытая сфера снизу*/
+  top: 631px;
+  left: 347px;
+}.element-home:nth-child(5) {  /*большая сфера*/
+  top: 641px;
+  left: 542px;
+  animation: pulse 6s infinite;
+  transform-origin: 641px 542px;
+}.element-home:nth-child(6) {
+  top: 593px;
+}.element-home:nth-child(7) {  /*размытая сфера справа*/
+  top: 30px;
+  left: 917px;
+}.element-home:nth-child(8) {  /*розовый червь*/
+  top: 155px;
+  left: 432px;
+  z-index: 1;
+}.element-home:nth-child(9) {  /*шипастая сфера*/
+  top: 200px;
+  left: 861px;
   animation: spin 20s linear infinite;
-  transform-origin: 870px 200px;
-
+  transform-origin: 0 0;
+  z-index: 1;
+}.element-home:nth-child(10) {  /*кнопка*/
+  top: 465px;
+  left: 627px;
+  z-index: 1;
 }
-@keyframes spin {
+
+
+@keyframes moveSideToSide1 {  /*маленькая сфера слева*/
+  0%{
+		top: 503px;
+		left: 22px;
+	}
+	50%{
+		top: 543px;
+		left: 62px;
+	}
+	75%{
+		top: 523px;
+		left: 42px;
+	}
+	100%{
+		top:503px;
+		left:22px;
+	}
+}
+
+@keyframes moveSideToSide2 {  /*маленькая сфера справа*/
+  0%{
+		top: 61px;
+		left: 744px;
+	}
+	50%{
+		top: 101px;
+		left: 784px;
+	}
+	75%{
+		top: 81px;
+		left: 764px;
+	}
+	100%{
+		top:61px;
+		left:744px;
+	}
+}
+
+@keyframes pulse {  /*большая сфера*/
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(0.95);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+@keyframes spin {  /*шипастая сфера*/
   0% {
     transform: rotate(0deg);
   }
@@ -21,78 +106,40 @@
     transform: rotate(360deg);
   }
 }
-.element-home:nth-child(4) {
-  animation: moveSideToSide 20s linear infinite;
-  transition:scale 1s linear;
-}
-.element-home:nth-child(1) {
-  animation: moveSideToSide 20s linear infinite;
-  transition:scale 1s linear;
-}
 
-@keyframes moveSideToSide {
-  0%{
-		top:0px;
-		left:0px;
-	}
-	50%{
-		top:40px;
-		left:40px;
-	}
-	70%{
-		left:-20px;
-		top:-20px;
-	}
-	80%{
-		left:-20px;
-		top:-20px;
-	}
-	100%{
-		left:0px;
-		top:0px;
-	}
-}
-.element-home:nth-child(6) {
-  animation: pulse 6s infinite;
-  transform-origin: 700px 700px;
-}
-@keyframes pulse {
-  0% {
-    transform: scale(1);
-  }
-  50% {
-    transform: scale(1.2);
-  }
-  100% {
-    transform: scale(1);
-  }
-}
 .title-field {
   position: absolute;
-  top: 156px;
-  left: 65px;
-  line-height: 1.11;
-  letter-spacing: 1px;
-  width: 870px;
+  top: 168px;
+  left: 68px;
+  width: 913px;
 }
 .title-one {
   font-family: DinPro;
   font-size: 21pt;
+  margin-bottom: 10px;
 }
 .title-two {
-  font-family: DinPro;
-  font-size: 84pt;
+  font-family: Gilroy;
+  font-size: 117px;
+  line-height: 1;
 }
 @font-face {
-  font-family: "DinPro";
-  src: url("../../../fonts/dinpro.otf") format("opentype");
+  font-family: "Gilroy";
+  src: url("../../../public/fonts/gilroy_light.ttf") format("opentype");
   font-style: normal;
   font-weight: normal;
 }
 @font-face {
-  font-family: "DinPro";
-  src: url("../../../fonts/dinpro_bold.otf") format("opentype");
+  font-family: "Gilroy";
+  src: url("../../../public/fonts/gilroy_extra_bold.ttf") format("opentype");
   font-style: normal;
   font-weight: bold;
 }
+@font-face {
+  font-family: "DinPro";
+  src: url("../../../public/fonts/dinpro.otf") format("opentype");
+  font-style: normal;
+  font-weight: bold;
+}
+
 

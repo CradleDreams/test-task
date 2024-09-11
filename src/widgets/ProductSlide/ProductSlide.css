@@ -5,9 +5,51 @@
 }
 .element-product {
   position: absolute;
-  width:1024px;
-  height:768px;
-
+}
+.element-product:nth-child(1) {
+  top: 355px;
+  left: 721px;
+  z-index: 1;
+}.element-product:nth-child(2) {
+  top: 212px;
+  left: 77px;
+}.element-product:nth-child(3) {
+  top: 317px;
+  left: 186px;
+  z-index: 1;
+}.element-product:nth-child(4) {
+  top: 65px;
+  left: 197px;
+}.element-product:nth-child(5) {
+  top: 449px;
+  left: 242px;
+  z-index: 1;
+}.element-product:nth-child(6) {
+  top: 155px;
+  left: 184px;
+  z-index: 3;
+}.element-product:nth-child(7) {
+  top: 703px;
+  left: 183px;
+  z-index: 3;
+}.element-product:nth-child(8) {
+  top: 453px;
+  left: 10px;
+}.element-product:nth-child(9) {
+  top: 553px;
+  left: 25px;
+  z-index: 3;
+}.element-product:nth-child(10) {
+  top: 80px;
+  left: 50px;
+  z-index: 2;
+}.element-product:nth-child(11) {
+  top: 346px;
+  left: 351px;
+  z-index: 1;
+}.element-product:nth-child(12) {
+  top: 565px;
+  left: 681px;
 }
 .notepad-field {
   position: absolute;
@@ -15,13 +57,13 @@
   box-shadow: 10px 10px 30px 1px lightgray;
   border-radius: 40px;
   top: 380px;
-  left: 670px;
-  width: 270px;
+  left: 682px;
+  width: 263px;
   height: 150px;
   font-size: 16pt;
   line-height: 1.4;
   font-family: DinPro;
-  padding: 50px 90px 0 55px;
+  padding: 53px 90px 0 43px;
 }
 
 .dish-field {
@@ -29,11 +71,11 @@
   background-color: white;
   box-shadow: 10px 10px 30px 1px lightgray;
   border-radius: 40px;
-  width: 400px;
-  height: 270px;
+  width: 413px;
+  height: 265px;
   top: 380px;
-  left: 200px;
-  padding: 50px 40px 0 150px;
+  left: 228px;
+  padding: 54px 61px 0 126px;
   font-size: 16pt;
   line-height: 1.4;
   font-family: DinPro;
@@ -53,13 +95,13 @@
 }
 @font-face {
   font-family: "DinPro";
-  src: url("../../../fonts/dinpro_light.otf") format("opentype");
+  src: url("../../../public/fonts/dinpro_light.otf") format("opentype");
   font-style: normal;
   font-weight: normal;
 }
 @font-face {
   font-family: "DinPro";
-  src: url("../../../fonts/dinpro_bold.otf") format("opentype");
+  src: url("../../../public/fonts/dinpro_bold.otf") format("opentype");
   font-style: normal;
   font-weight: bold;
 }

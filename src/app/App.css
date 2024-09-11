@@ -30,7 +30,16 @@ section {
   background-position: right;
 }
 .main-el {
-  position: fixed;
-  width:1024px;
-  height:768px;
+  position: absolute;
 }
+.main-el:nth-child(1) {
+  left: 66px;
+  top: 26px;
+  z-index: 3;
+}
+.main-el:nth-child(2) {
+  left: 66px;
+  bottom: 26px;
+  z-index: 3;
+}
+
