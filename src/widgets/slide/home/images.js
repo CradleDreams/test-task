@@ -1,4 +1,4 @@
-export const data = [
+export const homeImages = [
   'images/sphere/blue-sphere.png',
   'images/stick.png',
   'images/sphere/mini-sphere.png',

@@ -1,4 +1,4 @@
-export const data = [
+export const textContent = [
   'Lorem ipsum dolor sit amet',
   'Lorem ipsum dolor sit amet, consectetur adipiscing\n' +
     '\t\t\t\t\t\telit, sed do eiusmod\n' +

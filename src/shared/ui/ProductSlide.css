@@ -1,0 +1,303 @@
+.container {
+  position: relative;
+  width:1024px;
+  height:768px;
+}
+.container1 {
+  position: relative;
+  width:1024px;
+  height:768px;
+  background: rgb(0 0 0 / 40%);
+}
+.element-product {
+  position: absolute;
+}
+.element-product:nth-child(1) {  /*блокнот*/
+  top: 355px;
+  left: 721px;
+  z-index: 1;
+}.element-product:nth-child(2) {  /*красный пузырь*/
+  top: 212px;
+  left: 77px;
+  animation: move1 10s linear infinite;
+  transition:scale 1s linear;
+}.element-product:nth-child(3) {  /*большой розовый пузырь*/
+  top: 317px;
+  left: 186px;
+  z-index: 2;
+  animation: move2 10s infinite;
+}.element-product:nth-child(4) {  /*синий пузырь сверху*/
+  top: 65px;
+  left: 197px;
+  animation: move3 10s linear infinite;
+  transition:scale 1s linear;
+  z-index: 2;
+}.element-product:nth-child(5) {  /*синий пузырь справа по центру*/
+  top: 591px;
+  left: 242px;
+  z-index: 2;
+  animation: move4 7s linear infinite;
+  transition:scale 1s linear;
+}.element-product:nth-child(6) {  /*большой синий пузырь*/
+  top: 155px;
+  left: 184px;
+  z-index: 3;
+  animation: move5 10s linear infinite;
+  transition:scale 1s linear;
+}.element-product:nth-child(7) {  /*большой синий пузырь снизу*/
+  top: 703px;
+  left: 183px;
+  z-index: 3;
+  animation: move6 7s infinite;
+}.element-product:nth-child(8) {  /*маленький синий пузырь слева по центру*/
+  top: 453px;
+  left: 10px;
+  animation: move7 10s linear infinite;
+  transition:scale 1s linear;
+  z-index: 3;
+}.element-product:nth-child(9) {  /*розовый пузырь слева*/
+  top: 553px;
+  left: 25px;
+  z-index: 3;
+  animation: move8 7s linear infinite;
+  transition:scale 1s linear;
+}.element-product:nth-child(10) {  /*бутылка*/
+  top: 80px;
+  left: 50px;
+  z-index: 2;
+}.element-product:nth-child(11) {  /*блюдо*/
+  top: 346px;
+  left: 351px;
+  z-index: 1;
+}
+.button-info {  /*кнопка*/
+  position: absolute;
+  top: 565px;
+  left: 681px;
+  z-index: 1;
+}
+@keyframes move1 {  /*красный пузырь*/
+  0%{
+		top: 212px;
+		left: 77px;
+	}
+	50%{
+		top: 212px;
+		left: 102px;
+	}
+	100%{
+		top:212px;
+		left:77px;
+	}
+}
+@keyframes move2 {  /*большой розовый пузырь*/
+  0% {
+    transform: scale(1);
+  }
+  40% {
+    transform: scale(1.3);
+  }
+  70% {
+    transform: scale(0.5);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+@keyframes move3 {  /*синий пузырь сверху*/
+  0%{
+		top: 65px;
+		left: 197px;
+	}
+	50%{
+		top: 95px;
+		left: 217px;
+	}
+	100%{
+		top:65px;
+		left:197px;
+	}
+}
+@keyframes move4 {  /*синий пузырь справа по центру*/
+  0%{
+		top: 591px;
+		left: 242px;
+	}
+	50%{
+		top: 600px;
+		left: 262px;
+	}
+	100%{
+		top:591px;
+		left:242px;
+	}
+}
+@keyframes move5 {  /*большой синий пузырь*/
+   0%{
+		top: 155px;
+		left: 184px;
+	}
+	50%{
+		top: 195px;
+		left: 224px;
+	}
+	100%{
+		top:155px;
+		left:184px;
+	}
+}
+@keyframes move6 {   /*большой синий пузырь снизу*/
+   0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.3);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+@keyframes move7 {  /*маленький синий пузырь слева по центру*/
+   0%{
+		top: 453px;
+		left: 10px;
+	}
+	50%{
+		top: 483px;
+		left: 50px;
+	}
+	100%{
+		top:453px;
+		left:10px;
+	}
+}
+@keyframes move8 {  /*розовый пузырь слева*/
+   0%{
+		top: 553px;
+		left: 25px;
+	}
+	50%{
+		top: 573px;
+		left: 55px;
+	}
+	100%{
+		top:553px;
+		left:25px;
+	}
+}
+.notepad-field {
+  position: absolute;
+  background-color: white;
+  box-shadow: 10px 10px 30px 1px lightgray;
+  border-radius: 40px;
+  top: 380px;
+  left: 682px;
+  width: 263px;
+  height: 150px;
+  font-size: 16pt;
+  line-height: 1.4;
+  font-family: DinPro;
+  padding: 53px 90px 0 43px;
+}
+
+.dish-field {
+  position: absolute;
+  background-color: white;
+  box-shadow: 10px 10px 30px 1px lightgray;
+  border-radius: 40px;
+  width: 413px;
+  height: 265px;
+  top: 380px;
+  left: 228px;
+  padding: 54px 61px 0 126px;
+  font-size: 16pt;
+  line-height: 1.4;
+  font-family: DinPro;
+}
+.field-product-t {
+  position: absolute;
+  top: 160px;
+  left: 337px;
+  z-index: 2;
+  line-height: 1.1;
+}
+.modal-window {
+  position: absolute;
+  background-color: white;
+  border-radius: 40px;
+  top: 124px;
+  left: 140px;
+  width: 822px;
+  height: 573px;
+  font-size: 16pt;
+  z-index: 1
+}
+.product-message {
+  font-family: DinPro;
+  font-size: 21pt;
+  margin-left: 9px;
+}
+.product-name {
+  font-family: DinPro;
+  font-size: 75pt;
+
+}
+.modal-text-field {
+  position: absolute;
+  top: 212px;
+  left: 210px;
+  width: 500px;
+
+}
+.point {
+  color: deepskyblue;
+  font-family: DinPro;
+  font-size: 19pt;
+}
+.modal-text {
+  font-family: DinPro;
+  font-size: 19pt;
+  margin-bottom: 15px;
+}
+.button-close {
+  position: absolute;
+  top: 156px;
+  left: 897px;
+  z-index: 2;
+}
+.arrow-left {
+  position: absolute;
+  top: 646px;
+  left: 353px;
+  z-index: 2;
+}
+.arrow-right {
+  position: absolute;
+  top: 646px;
+  left: 433px;
+  z-index: 2;
+}
+.point-pink {
+  position: absolute;
+  top: 649px;
+  left: 382px;
+  z-index: 2;
+}
+.point-opacity {
+  position: absolute;
+  top: 649px;
+  left: 402px;
+  z-index: 2;
+}
+@font-face {
+  font-family: "DinPro";
+  src: url("../../../public/fonts/dinpro_light.otf") format("opentype");
+  font-style: normal;
+  font-weight: normal;
+}
+@font-face {
+  font-family: "DinPro";
+  src: url("../../../public/fonts/dinpro_bold.otf") format("opentype");
+  font-style: normal;
+  font-weight: bold;
+}

@@ -1,11 +1,11 @@
 import React from 'react';
-import './HomeSlide.css';
-import { data } from './data';
+import '../../../shared/ui/HomeSlide.css';
+import { homeImages } from './images';
 
 const HomeSlide = ({ moveFocus2 }) => {
   return (
     <div className={'container'}>
-      {data.map((obj) => (
+      {homeImages.map((obj) => (
         <img src={obj} className={'element-home'} />
       ))}
       <img src={'images/button/button.png'} className={'element-home'} onClick={moveFocus2} />

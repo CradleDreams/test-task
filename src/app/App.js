@@ -1,6 +1,6 @@
-import HomeSlide from '../widgets/HomeSlide/HomeSlide';
-import InfoSlide from '../widgets/InfoSlide/InfoSlide';
-import ProductSlide from '../widgets/ProductSlide/ProductSlide';
+import HomeSlide from '../widgets/slide/home';
+import InfoSlide from '../widgets/slide/info';
+import ProductSlide from '../widgets/slide/product';
 import './App.css';
 import React, { useRef, useState } from 'react';
 

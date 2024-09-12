@@ -1,4 +1,4 @@
-export const data = [
+export const productImages = [
   'images/icon/notepad.png',
   'images/bubble/bubble-1.png',
   'images/bubble/bubble-2.png',
@@ -9,6 +9,5 @@ export const data = [
   'images/bubble/bubble-7.png',
   'images/bubble/bubble-8.png',
   'images/bottle.png',
-  'images/icon/dish.png',
-  'images/button/button-info.png'
+  'images/icon/dish.png'
 ];
